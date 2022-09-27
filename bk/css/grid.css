@@ -1,0 +1,81 @@
+@charset "utf-8";
+/* css */
+.flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+._nowrap {
+    flex-wrap: nowrap;
+}
+._self-end {-ms-flex-item-align: end;align-self: flex-end;}
+._column {-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;}
+._center {-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;}
+._right {-webkit-box-pack: end;-ms-flex-pack: end;justify-content: flex-end;}
+._left {-webkit-box-pack: start;-ms-flex-pack: start;justify-content: flex-start;}
+._between {-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;}
+._around {-ms-flex-pack: distribute;justify-content: space-around;}
+._middle {-webkit-box-align: center;-ms-flex-align: center;-ms-grid-row-align: center;align-items: center;}
+._top {-webkit-box-align: start;-ms-flex-align: start;-ms-grid-row-align: flex-start;align-items: flex-start;}
+._bottom {-webkit-box-align: end;-ms-flex-align: end;-ms-grid-row-align: flex-end;align-items: flex-end;}
+
+.split5 > * {-webkit-box-flex: 0;-ms-flex: none;flex: none;width: 20%;}
+.split4 > * {-webkit-box-flex: 0;-ms-flex: none;flex: none; width: 25%;}
+.split3 > * {-webkit-box-flex: 0;-ms-flex: none;flex: none; width:33.333333%;}
+.split2 > * {-webkit-box-flex: 0;-ms-flex: none;flex: none; width:50%;}
+
+
+
+.grid-10 > * {padding-left: 10px;}
+.grid-10 {margin-left: -10px;}
+.grid-20 > * {padding-left: 20px;}
+.grid-20 {margin-left: -20px;}
+.grid-30 > * {padding-left: 30px;}
+.grid-30 {margin-left: -30px;}
+.grid-40 > * {padding-left: 40px;}
+.grid-40 {margin-left: -40px;}
+.grid-50 > * {padding-left: 50px;}
+.grid-50 {margin-left: -50px;}
+
+.grid4 {-webkit-box-flex: 0;-ms-flex: none;flex: none; width: 33.333333%;}
+.grid5 {-webkit-box-flex: 0;-ms-flex: none;flex: none; width: 41.666666%;}
+.grid7 {-webkit-box-flex: 0;-ms-flex: none;flex: none; width: 58.333333%;}
+.grid8 {-webkit-box-flex: 0;-ms-flex: none;flex: none; width: 66.666666%;}
+/*+++++++++++++++
+    grid_breakpoint
++++++++++++++++*/
+@media (max-width:1000px) {
+    .split5-md > * {-webkit-box-flex: 0;-ms-flex: none;flex: none;width: 20%;}
+    .split4-md > * {-webkit-box-flex: 0;-ms-flex: none;flex: none; width: 25%;}
+    .split3-md > * {-webkit-box-flex: 0;-ms-flex: none;flex: none; width:33.333333%;}
+    .split2-md > * {-webkit-box-flex: 0;-ms-flex: none;flex: none; width:50%;}
+    .split1-md > * {-webkit-box-flex: 0;-ms-flex: none;flex: none; width:100%;}
+    .grid-none-md > * {padding-left: 0;}
+    .grid-none-md {margin-left: 0;}
+}
+@media (max-width:640px) {
+    .split5-sm > * {-webkit-box-flex: 0;-ms-flex: none;flex: none;width: 20%;}
+    .split4-sm > * {-webkit-box-flex: 0;-ms-flex: none;flex: none; width: 25%;}
+    .split3-sm > * {-webkit-box-flex: 0;-ms-flex: none;flex: none; width:33.333333%;}
+    .split2-sm > * {-webkit-box-flex: 0;-ms-flex: none;flex: none; width:50%;}
+    .split1-sm > * {-webkit-box-flex: 0;-ms-flex: none;flex: none; width: 100%;}
+    .grid-none-sm > * {padding-left: 0;}
+    .grid-none-sm {margin-left: 0;}
+    
+    .grid4-sm {-webkit-box-flex: 0;-ms-flex: none;flex: none; width: 33.333333%;}
+    .grid5-sm {-webkit-box-flex: 0;-ms-flex: none;flex: none; width: 41.666666%;}
+    .grid7-sm {-webkit-box-flex: 0;-ms-flex: none;flex: none; width: 58.333333%;}
+    .grid8-sm {-webkit-box-flex: 0;-ms-flex: none;flex: none; width: 66.666666%;}
+    .grid12-sm {-webkit-box-flex: 0;-ms-flex: none;flex: none; width: 100%;}
+}
+@media (max-width:480px) {
+    .split5-xs > * {-webkit-box-flex: 0;-ms-flex: none;flex: none;width: 20%;}
+    .split4-xs > * {-webkit-box-flex: 0;-ms-flex: none;flex: none; width: 25%;}
+    .split3-xs > * {-webkit-box-flex: 0;-ms-flex: none;flex: none; width:33.333333%;}
+    .split2-xs > * {-webkit-box-flex: 0;-ms-flex: none;flex: none; width:50%;}
+    .split1-xs > * {-webkit-box-flex: 0;-ms-flex: none;flex: none; width: 100%;}
+    .grid-none-xs > * {padding-left: 0;}
+    .grid-none-xs {margin-left: 0;}
+}

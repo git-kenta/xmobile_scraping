@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--[if lt IE 9]>
+<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+    <link rel="shortcut icon" href="">
+</head>
+
+<body>
+
+    <!--↓header-->
+    <header>
+        <div class="flex header">
+            <div class="header-left flex _center">
+                <h1><img src="img/logo.png" alt="logo"></h1>
+                <p>エックスモバイル契約状況</p>
+                <p><?= 'test';?></p>
+            </div>
+            <div class="header-right flex _column">
+                <div class="header-right-top flex _middle _between">
+                    <!--search insert-->
+                    <div class="search">
+                        <p>search</p>
+                    </div>
+                    <h3>最終更新日：2020年3月21日　16時15分</h3>
+                </div>
+                <div class="header-right-bottom flex _middle _between">
+                    <h2>契約状況｜代理店名：株式会社ZUMI</h2>
+                    <h3>インセンティブ、WEB在庫の金額・数量はおおよその目安です。</h3>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--↑header-->
+    <main>
+        <div class="flex">
+            <!--↓menu-->
+            <div class="menu">
+                <div class="menu-agency">
+                    <div class="title flex _between">
+                        <p>代理店</p>
+                    </div>
+                    <ul style="display: block">
+                        <li class="active">全体</li>
+                        <li>株式会社ZUMI</li>
+                        <li>与那覇</li>
+                        <li>松川</li>
+                    </ul>
+                </div>
+                <div class="menu-insentive">
+                    <div class="title flex _between">
+                        <p>インセンティブ</p><span>＋</span>
+                    </div>
+                    <ul>
+                        <li><span class="name">株式会社ZUMI</span><span class="price">3,429円</span></li>
+                        <li><span class="name">与那覇</span><span class="price">2,033円</span></li>
+                        <li><span class="name">松川</span><span class="price">345円</span></li>
+                    </ul>
+                </div>
+                <div class="menu-config">
+                    <div class="title flex _between">
+                        <p>設定</p><span>＋</span>
+                    </div>
+                    <ul>
+                        <li>代理店追加・編集</li>
+                        <li>WEB在庫設定</li>
+                    </ul>
+                </div>
+            </div>
+            <!--↑menu-->
+            <!--↓content-->
+            <div class="content">
+                <div class="content-link flex grid-20">
+                    <div class="split">
+                        <a href="" class="total active">
+                            <h3>契約者総数</h3>
+                            <p class="num">25</p>
+                            <p>2月契約数：4回線 / 3月契約数：5回線</p>
+                        </a>
+                    </div>
+                    <div class="split">
+                        <a href="" class="genkai">
+                            <h3>契約者総数</h3>
+                            <p class="num">25</p>
+                            <p>2月契約数：4回線 / 3月契約数：5回線</p>
+                        </a>
+                    </div>
+                    <div class="split">
+                        <a href="" class="sim">
+                            <h3>契約者総数</h3>
+                            <p class="num">25</p>
+                            <p>2月契約数：4回線 / 3月契約数：5回線</p>
+                        </a>
+                    </div>
+                    <div class="split">
+                        <a href="" class="sugoi">
+                            <h3>契約者総数</h3>
+                            <p class="num">25</p>
+                            <p>2月契約数：4回線 / 3月契約数：5回線</p>
+                        </a>
+                    </div>
+                    <div class="split">
+                        <a href="" class="insentive">
+                            <h3>契約者総数</h3>
+                            <p class="num">25</p>
+                            <p>2月契約数：4回線 / 3月契約数：5回線</p>
+                        </a>
+                    </div>
+
+                </div>
+                <!------------------------->
+                <div class="content-list flex _between grid-20">
+                    <div class="content-list-all">
+                        <div class="split">
+                            <h3 class="title">契約者一覧</h3>
+
+                            <div class="content-list-box">
+                                <table>
+                                    <tr>
+                                        <th>お客様番号</th>
+                                        <th>お名前</th>
+                                        <th>ご契約プラン</th>
+                                        <th>代理店名</th>
+                                        <th>月額料金</th>
+                                        <th>日付</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1234567</td>
+                                        <td>友利　賢太</td>
+                                        <td>限界突破WiFi</td>
+                                        <td>株式会社ZUMI</td>
+                                        <td>2,345円</td>
+                                        <td>2020年3月20日</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1234567</td>
+                                        <td>友利　賢太</td>
+                                        <td>限界突破WiFi</td>
+                                        <td>株式会社ZUMI</td>
+                                        <td>2,345円</td>
+                                        <td>2020年3月20日</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1234567</td>
+                                        <td>友利　賢太</td>
+                                        <td>限界突破WiFi</td>
+                                        <td>株式会社ZUMI</td>
+                                        <td>2,345円</td>
+                                        <td>2020年3月20日</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1234567</td>
+                                        <td>友利　賢太</td>
+                                        <td>限界突破WiFi</td>
+                                        <td>株式会社ZUMI</td>
+                                        <td>2,345円</td>
+                                        <td>2020年3月20日</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1234567</td>
+                                        <td>友利　賢太</td>
+                                        <td>限界突破WiFi</td>
+                                        <td>株式会社ZUMI</td>
+                                        <td>2,345円</td>
+                                        <td>2020年3月20日</td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="content-list-one">
+                        <div class="split">
+                            <h3 class="title">契約者情報</h3>
+                            <div class="content-list-box">
+                                <table>
+
+                                    <tr class="flex">
+                                        <td class="flex _between">
+                                            <span>お客様名</span>
+                                            <p>fsafijkj;lkj;i</p>
+                                        </td>
+                                        <td class="flex _between">
+                                            <span>よみがな</span>
+                                            <p>カブシキガイシ</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--↑content-->
+        </div>
+    </main>
+
+
+
+</body>
+
+</html>
